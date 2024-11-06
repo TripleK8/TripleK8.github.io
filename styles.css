@@ -1,74 +1,88 @@
-<style>
-    body {
-        margin: 0; /* ลบระยะห่างจากขอบ */
-        padding: 0; /* ลบระยะห่างจากขอบ */
-        display: flex; /* ใช้ flexbox */
-        flex-direction: column; /* ตั้งค่าทิศทางเป็นแนวตั้ง */
-        align-items: center; /* จัดกลางในแนวนอน */
-        justify-content: center; /* จัดกลางในแนวตั้ง */
-        min-height: 100vh; /* ความสูงขั้นต่ำให้เต็มหน้าจอ */
-        font-family: "Sarabun", sans-serif; /* ฟอนต์ */
-    }
+/* Basic Styling */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: "Sarabun", sans-serif;
+    background-color: #f7f9fc; /* Light background for contrast */
+}
 
-    div {
-        width: auto; /* ความกว้างเป็น auto */
-        max-width: 800px; /* ความกว้างสูงสุดเพื่อไม่ให้เกิน */
-        padding: 20px; /* ระยะห่างภายใน */
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* เงา */
-        background-color: #fff; /* สีพื้นหลัง */
-        border-radius: 8px; /* มุมโค้ง */
-        text-align: center; /* จัดกลางเนื้อหา */
-    }
+/* Container Styling */
+.container {
+    max-width: 800px;
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 10px;
+    text-align: center;
+}
 
-    input[type="number"] {
-        width: 90%; /* ความกว้าง 90% ของ div */
-        padding: 10px; /* ระยะห่างภายใน */
-        margin: 10px 0; /* ระยะห่างด้านบนและด้านล่าง */
-        border: 1px solid #ccc; /* ขอบ */
-        border-radius: 20px; /* มุมโค้ง */
-        box-sizing: border-box; /* ให้รวมขอบในความกว้าง */
-        transition: border-color 0.3s; /* เพิ่มการเปลี่ยนแปลงสีขอบ */
-    }
+h1, h2 {
+    color: #333;
+}
 
-    input[type="number"]:focus {
-        border-color: #007bff; /* เปลี่ยนสีขอบเมื่อโฟกัส */
-        outline: none; /* ลบกรอบเมื่อโฟกัส */
-    }
+/* Input Styling */
+input[type="number"] {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
 
-    button {
-        width: 20%; /* ให้ปุ่มมีความกว้างเต็ม */
-        padding: 10px; /* ระยะห่างภายใน */
-        margin: 20px 0; /* ระยะห่างด้านบนและด้านล่าง */
-        background-color: #0056b3; /* สีพื้นหลัง */
-        color: white; /* สีตัวอักษร */
-        border: 20px; /* ไม่มีขอบ */
-        border-radius: 20px; /* มุมโค้ง */
-        cursor: pointer; /* เปลี่ยนเคอร์เซอร์เป็นรูปมือเมื่อชี้ที่ปุ่ม */
-        transition: background-color 0.3s; /* เพิ่มการเปลี่ยนแปลงสีพื้นหลัง */
-    }
+input[type="number"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
 
-    button:hover {
-        background-color: #0b6814; /* เปลี่ยนสีพื้นหลังเมื่อวางเมาส์ */
-    }
+/* Button Styling */
+button {
+    width: 90%;
+    padding: 12px;
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
 
-    table {
-        width: 100%;
-        border-collapse: collapse;
-        margin-top: 20px;
-    }
-    th, td {
-        border: 1px solid #ccc;
-        padding: 8px;
-        text-align: left;
-    }
-    th {
-        background-color: #f2f2f2;
-    }
-    /* สไตล์สำหรับลิขสิทธิ์ */
-    footer {
-        text-align: center; /* จัดกลาง */
-        margin-top: 20px; /* ระยะห่างด้านบน */
-        font-size: 14px; /* ขนาดฟอนต์ */
-        color: #666; /* สีตัวอักษร */
-    }
-</style>
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+th, td {
+    padding: 8px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+}
