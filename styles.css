@@ -86,3 +86,64 @@ footer {
     font-size: 14px;
     color: #666;
 }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    h2 {
+        font-size: 1.4em;
+    }
+
+    button {
+        font-size: 14px;
+    }
+
+    table, th, td {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    button {
+        font-size: 12px;
+    }
+
+    input[type="number"] {
+        width: 100%; /* Full width for small screens */
+    }
+}
+
+@media (min-width: 1200px) {
+    /* For large desktops, increase the padding and font sizes */
+    .container {
+        max-width: 900px;
+        padding: 30px;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+    button {
+        font-size: 18px;
+    }
+}
